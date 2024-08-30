@@ -124,16 +124,12 @@
         </div>
     </div>
     <!-- <audio id="bgmMusic" src="/music/dongluchoaxa.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio> -->
-    <audio src="/music/dongluchoaxa.mp3"></audio>
+    <!-- <audio src="/music/dongluchoaxa.mp3"></audio> -->
+    <audio controls autoplay loop hidden>
+        <source src="/music/dongluchoaxa.mp3" type="audio/mpeg">
+    </audio>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script>
-    window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
-</script>
 <script>
     $(window).on('load', function (event) {
         $('body').removeClass('preloading');
